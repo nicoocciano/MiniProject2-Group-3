@@ -40,6 +40,12 @@ nav i {
     position: relative;
     
 }
+/* ul star */
+ul{
+  list-style: none;
+  color: goldenrod;
+}
+
 
 /* Footer */
 .footer-upper{
