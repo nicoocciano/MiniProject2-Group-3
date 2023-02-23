@@ -46,6 +46,12 @@ nav i {
 .search i{
     position: relative;
 }
+/* ul star */
+ul{
+  list-style: none;
+  color: goldenrod;
+}
+
 
 @media only screen and (max-width: 750px){
 
