@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 body{
- 
+ background: #fff !important;
 
 }
 .Logo{
@@ -264,8 +264,6 @@ hr{
     
   }
 }
-
-
 /**END OF SHOPPING CART****************/
 /* carousel */
 .carousel-item img{
@@ -274,7 +272,11 @@ hr{
   width: 100%;
   min-width: 1020px;
 }
+.title{
+  font-size: 1.2rem;
 
+  line-height: 20px;
+}
 
 button span{
     margin-top: 250px;
