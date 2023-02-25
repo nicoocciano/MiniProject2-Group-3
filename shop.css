@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #1C49C2;
+}
+.Logo{
+    font-size: larger;
+}
+nav{
+    background: #1C49C2;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'chewy';
+}
+nav input{
+    width: 400px;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+}
+nav i {
+    font-size: 20px;
+}
+.alt-menu a {
+    padding: 20px;
+}
+.search{
+    color: white;
+    font-family: 'chewy';
+}
+.search i{
+    position: relative;
+    
+}
+img{
+    border-radius: 10px;
+    cursor: pointer;
+}
+#mainImage{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.imageChoice{
+    width: 100px;
+    height: 100px;
+    transition: 0.3s;
+}
+.imageChoice:hover{
+    width: 110px;
+    height: 110px;
+    border: 2px solid white;
+    margin: 1px;
+}
+ul{
+    list-style: none;
+    color: goldenrod;
+}
+.products{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+/* Footer */
+.footer-upper{
+    width: 100%;
+    background-color: #1C49C2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'chewy';
+    color: white;
+}
+.footer-upper a{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1C49C2;
+    font-family: 'chewy';
+}
+.footer-lower{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #1C49C2;
+}
+
+.footer-lower a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: #1C49C2;
+    padding: 20px;
+}
+
+
+
+/* nav bar ends */
+
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  * {
+    -ms-overflow-style: none;
+  }
+  
+
+
+  .contianer{
+    width: 100%;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  }
+  .sing-in{
+    border-radius: 5px;
+    color: white;
+    background: #1C49C2;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    font-family: 'Poppins';
+  }
+  .sing-in button{
+    background: none;
+    background: white;
+    margin-top: 5px;
+    font: 600;
+    border: none;
+  }
+  .sing-in input, button{
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    padding: 0px;
+    border: none;
+  }
+  .sing-in a{
+    margin-top: 9px;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Poppins';
+  
+  }
+  .sign-up {
+    font-family: 'Poppins';
+    background: #1C49C2;
+    width: 400px;
+    height: 350px;
+    padding: 50px;
+    border-radius: 5px;
+  }
+  .sign-up a{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Poppins';
+  }
+  .promo{
+    text-align: center;
+    font-family: 'Poppins';
+  }
+  .sing-in form{
+    height: auto;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+  }
