@@ -308,14 +308,16 @@ height: 280px;
   text-align: center;
   margin-top: 50px;
   text-align: start;
- 
+  display: flex;
+  flex-direction: column;
 }
 .shop-item-title{
   font-size: 1.1rem;
-
+  height: 70px;
  font-weight: 500;
   text-align:start;
   margin-bottom: 5px;
+ 
 }
 .shop-items i{
   color: orange;
@@ -325,7 +327,17 @@ height: 280px;
 .shop-items img{
   width: 200px;
   height: 280px;
-  margin: auto auto auto 3.5em;
+  align-self: center;
+ 
+}
+@media only screen and (max-width: 550px ) and (min-width:420px){
+  
+ .shop-items img{
+ 
+  
+ }
+  
+ 
 }
 .shop-item-price{
   margin-bottom: 0;
@@ -362,6 +374,26 @@ font-weight: 500;
   height: 280px;
   }
 }
+@media only screen and (max-width: 990px) and (min-width:551px){
+  .row{
+   
+  display: flex !important;
+  flex-wrap: wrap !important;
+   width: 750px;
+   max-width: 570px;
+
+ 
+  }
+  .shop-items img{
+ 
+    
+   }
+   .shop-item-title{
+    width: 250px;
+    height: 100px;
+   }
+}
+
 
 /* END OF DOG INSIDE CATEGORY**/
 /**DOG*/
