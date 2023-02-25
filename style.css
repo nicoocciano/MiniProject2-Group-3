@@ -281,6 +281,114 @@ hr{
 button span{
     margin-top: 250px;
 }
+/**caroousel end*/
+/**CATEGORIES**/
+.categories{
+  margin-top: 5em;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.categories img{
+  border-radius: 100px;
+}
+/**END OF CATEGORY***/
+/*DOG INSIDE CATEGORY**/
+.banner{
+width: 100%;
+height: 280px;
+
+}
+.banners{
+  display: none;
+}
+.shop-items{
+  text-align: center;
+  margin-top: 50px;
+  text-align: start;
+ 
+}
+.shop-item-title{
+  font-size: 1.1rem;
+
+ font-weight: 500;
+  text-align:start;
+  margin-bottom: 5px;
+}
+.shop-items i{
+  color: orange;
+  margin-bottom: 0px;
+  
+}
+.shop-items img{
+  width: 200px;
+  height: 280px;
+  margin: auto auto auto 3.5em;
+}
+.shop-item-price{
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color:#bc2848;
+}
+.shop-item-content{
+  line-height: 23px;
+}
+.shop-item-content button{
+width: 100%;
+margin-bottom: 10px;
+border-radius: 5px;
+font-size: 1.2rem;
+padding-bottom: 30px;
+padding-top: 10px;
+background: #ef6c00;
+color: white;
+font-family: 'Poppins';
+font-weight: 500;
+
+}
+.shop{
+  margin-top: 50px;
+}
+@media only screen and (max-width: 650px){
+  .banner{
+    display: none;
+  }
+  .banners{
+    display: block;
+    width: 100%;
+  height: 280px;
+  }
+}
+
+/* END OF DOG INSIDE CATEGORY**/
+/**DOG*/
+.dog img{
+  border-radius: 10px;
+
+}
+.dog{
+  padding-top: 1em;
+
+
+}
+.dog-subtitle{
+  font-size: 1.5rem;
+  padding: 1em;
+  margin-bottom: 0px;
+  font-weight: 400;
+
+}
+.dog-btn{
+ background: #7691da;
+  font-size: 1.5rem !important;
+  width:300px !important;
+  height: 50px !important;
+  margin-top: -20px;
+  border-radius: 10px;
+}
+/**DOG ENDS*/
 /* Footer */
 .footer-upper{
     width: 100%;
