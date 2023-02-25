@@ -1,3 +1,4 @@
+// JS for Shop Page
 let image = Array.from(document.getElementsByClassName("imageChoice"));
 let mainImage = document.getElementById("mainImage");
 
@@ -10,3 +11,7 @@ image.forEach(function (images) {
     images.addEventListener("click", showImage)
     
 });
+// End of shop page
+
+
+// JS for Pet Categories
