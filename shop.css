@@ -46,9 +46,12 @@ img{
     border-radius: 10px;
     cursor: pointer;
 }
+.wrapper{
+ background: white !important;
+}
 #mainImage{
     width: 100%;
-    height: 700px;
+    height: 500px;
     object-fit: cover;
     margin-bottom: 10px;
 }
@@ -67,12 +70,197 @@ ul{
     list-style: none;
     color: goldenrod;
 }
+.auto{
+  color: #1C49C2;
+  font-weight: 700;
+  background: #82b1db;
+  border-radius: 10px;
+  width: 80%;
+}
+.auto li {
+  margin-left: 20px;
+}
 .products{
     object-fit: cover;
     width: 300px;
     height: 300px;
 }
+.shop-button{
+  margin-top: 50px;
+  background: #ef6c00;
+  border-radius: 10px;
+  padding: 0px 20px 40px 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+select {
+  background: red;
+margin: 0;
+padding: 0 0.75em 0 0;
+width: auto;
+border: none;
+box-shadow: none;
+background: none;
+outline: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+-o-appearance: none;
+appearance: none;
 
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+}
+
+select:focus {
+outline: none;
+border: none;
+background: red;
+font-size: 2rem;
+}
+
+select:hover {
+cursor: pointer;
+
+}
+.shop-right{
+
+  height: 515px;
+}
+.dropdown{
+  font-size: 2rem
+}
+.favor{
+  position: relative;
+  
+}
+.img{
+  display: block;
+
+  height: auto;
+}
+  .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0.8rem;
+      right: 0;
+     width: 93%;
+     padding-right: 300px;
+     padding-bottom: 0;
+     
+      opacity: 0;
+      transition: .3s ease;
+      background: black;
+    }
+.fa-book:hover{
+  color: #eee;
+}
+.favor:hover .overlay{
+  opacity: 0.8;
+}
+.icon{
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.navs i:hover{
+background-color: rgb(255, 217, 0);
+color: goldenrod;
+border: 5px;
+}
+
+.carousel-item video{
+  
+}
+
+
+.navbarss a{
+  color: goldenrod;
+  padding: 10px;
+  width: auto;   
+  margin-top: 40px;
+}
+.navbarss{
+  margin-right: 200px;
+}
+.acc{   
+  width: 95%;
+  padding: auto;
+  margin: auto;
+}
+.read{
+ left: 195px;
+
+ 
+}
+.footer{
+
+  
+}
+.card{
+  background: black;
+}
+.car3{
+display: block;
+ 
+ background-size: cover;
+ background: rgb(2,0,36);
+ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(172,172,235,1) 35%, rgba(0,212,255,1) 100%);
+ width: 100%;
+}
+.car4{
+  display: none;
+}
+.car3 video{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.navbarss a:hover{
+ 
+  text-decoration: underline;
+  color:goldenrod;
+  cursor: pointer;
+  
+}
+.controls{
+  background: red !important;
+  color: red !important;
+}
+.carousel-item{
+  left: 40px;
+  top: 30px;
+  row-gap: 0px;
+}
+.tol p{
+  color: white;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tol a{
+text-decoration: none;
+}
+
+.tol p:hover{
+  color:gold;
+  cursor: pointer;
+  text-decoration: underline;
+
+}
 /* Footer */
 .footer-upper{
     width: 100%;
@@ -103,6 +291,32 @@ ul{
     font-family: 'Poppins';
     color: #1C49C2;
     padding: 20px;
+}
+@media only screen and (max-width: 750px){
+
+  nav{
+    height: 6.5rem;
+    align-items: start;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  nav input{
+    margin-top: 50px;
+    display: block;
+    position: absolute;
+    height: 2.6rem;
+  
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .chewy-carousel{
+  }
+  .search i{
+    display: none;
+  }
 }
 
 

@@ -286,9 +286,10 @@ button span{
 .categories{
   margin-top: 5em;
   display: flex;
-
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 .categories img{
   border-radius: 100px;
@@ -388,7 +389,33 @@ font-weight: 500;
   margin-top: -20px;
   border-radius: 10px;
 }
+div{
+  margin: 0;
+  padding: 0;
+}
 /**DOG ENDS*/
+
+/**REVIEWS**/
+.card-img-top{
+ border-radius: 50px;
+}
+.owl-theme .owl-dots .owl-dot span {
+  display: none !important;
+}
+/* .owl-prev{
+  background: red !important;
+  height: 50px;
+
+ 
+}
+.owl-prev span{
+  font-size: 3rem !important; 
+  font-weight: bolder !important;
+  margin-top: 0px !important;
+} */
+
+
+/**REVIEWS ENDS**/
 /* Footer */
 .footer-upper{
     width: 100%;
