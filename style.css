@@ -273,7 +273,7 @@ hr{
 .cart-sidebar {
   position: fixed;
 
-  /* right: 0; */
+  /* right: 0;  */
   top: 0;
   width: 350px;
   height: 100%;
@@ -325,6 +325,7 @@ hr{
 .cart-sidebar .button{
   display: inline-block;
   width: 80%;
+  text-align: center;
   text-decoration: none;
   background: #7691da;
   color: #000;

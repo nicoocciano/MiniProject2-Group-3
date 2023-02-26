@@ -14,18 +14,13 @@ image.forEach(function (images) {
 // End of shop page
 
 
-// JS for Pet Categories
-
-
-
-
 // Sidebar Cart
 let cartBtn = document.querySelector('.cart');
 let cartSidebar = document.querySelector('.cart-sidebar');
 let closeIcon = document.querySelector('.close-icon');
 let cartCount = document.querySelector('.cartCount');
-
-
+let cartItems = [];
+let totalPrice = 0;
     
 cartBtn.onclick = function () {
     cartSidebar.style.right = "0";
@@ -35,45 +30,62 @@ closeIcon.onclick = function () {
     cartSidebar.style.right = "-400px";
 }
 
-let cart = [
-    {
-        productName: "",
-        productPrice: "",
-    }
-];
-function addToCart(name, price) {
-    cart.push({productName: name, productPrice: price});
-    localStorage.setItem("cartStorage", JSON.stringify(cart));
-};
-
-let cartStorages = JSON.parse(localStorage.getItem("cartStorage"));
-let cartContainer = document.getElementById("item");
-
-function showCart() {
-    let totalAmmount = 0;
-    let itemNumber = 0;
-    
-    cartStorages.forEach(function (cartItem) {
-        cartContainer.innerHTML += `
-
-        <div class="cartCon1>
-        <p id="description">${cartItem.productName}</p>
-        <p id="price">${cartItem.productPrice}</p>
-        button class="crt-btn" onclick="removeItem()">Remove</button>
-        `;
-        itemNumber++;
-    });
-
-}
-
-function removeItem(itemNumber) {
-    cartStorages.splice(itemNumber, 1);
-    localStorage.setItem("cartStorage", JSON.stringify(cartStorages));
-    cartContainer.innerHTML = "";
-    showCart();
+function addToCart(itemName, itemPrice ) {
+    cartItems.push({name: itemName, price: itemPrice});
+    cartCount.textContent = cartItems.length;
     
 }
 
+cartBtn.addEventListener('click', function () {
+    cartSidebar.style.right = "0";
+    
+});
+
+closeIcon.addEventListener('click', function () {
+    cartSidebar.style.right = "-400px";
+});
+
+function checkoutCart() {
+  let cartBody = document.querySelector('.cart-body');
+  cartBody.innerHTML = '';
+
+  cartItems.forEach(item => {
+    let cartItem = document.createElement('shop');
+    cartItem.classList.add('cart-item');
+
+    let img = document.createElement('div');
+    img.classList.add('img');
+    img.innerHTML = img.src;
+
+    let carttxt = document.createElement('div');
+    carttxt.classList.add('carttxt');
+    carttxt.innerHTML = `
+        <span>1x</span>
+        <h5>${item.name}</h5>
+        <h5 class="text-success">${item.price}</h5>
+    `;
+
+    cartItem.appendChild(img);
+    cartItem.appendChild(carttxt);
+    cartBody.appendChild(cartItem);
+  });
+
+  let cartTotal = document.querySelector('.cart-total');
+  cartTotal.textContent = `${totalPrice.toFixed(2)}`;
+
+  let checkoutBtn = document.createElement('button');
+  checkoutBtn.classList.add('checkout-btn');
+  checkoutBtn.textContent = 'Checkout';
+  cartBody.appendChild(checkoutBtn);
+
+  checkoutBtn.addEventListener('click', function () {
+    alert(`Total price: ${totalPrice.toFixed(2)}`);
+    cartItems = [];
+    totalPrice = 0;
+    cartCount.textContent = '0';
+    checkoutCart();
+  });
+}
 
 
 
