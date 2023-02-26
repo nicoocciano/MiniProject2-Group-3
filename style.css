@@ -292,6 +292,10 @@ button span{
   font-family: 'Poppins' !important;
 
 }
+.category-item img{
+  border-radius: 200px;
+  width: 200px !important;
+}
 .categories img{
   border-radius: 100px;
 }
@@ -394,10 +398,16 @@ font-weight: 500;
     height: 100px;
    }
 }
+.categories img{
+  width: 170px;
+  height: 170px;
+}
+.categories button{
+  background: none;
+}
 .categories{
 
-  display: flex;
-  justify-content: start;
+  margin-bottom: 100px;
 }
 .category-img{
   border-radius: 1000px !important;
@@ -410,19 +420,43 @@ font-weight: 500;
  
   
 }
+.categories ul{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+background-color: blue;
+ 
+}
+ul{
+  padding-left: 0px !important;
+}
+.categories ul li{
+ 
+  justify-content: space-between;
+}
 /* END OF DOG INSIDE CATEGORY**/
 /**DOG*/
 .dog img{
   border-radius: 10px;
 
 }
+
+.category-item-button.active{
+  border: #000 solid 1px;
+  border-radius: 200px;
+}
 .mt-3{
-  border: rgb(223, 217, 217) solid .2px;
-  border-radius: 5px;  
+  border: rgb(196, 190, 190) solid .3px;
+  border-radius: 10px;  
   margin-left: 0px;
 }
+.category-box .index-tabs{
+  display: none;
+}
+.category-box .index-tabs.active{
+  display: block;
+}
 .index-tabs{
-
 }
 .text-muted i{
   color: gold;
@@ -451,8 +485,8 @@ font-weight: 500;
  
 
 }
-.btn{
- background: #7691da!important;
+.dog-btn{
+ background: #7691da;
   font-size: 1.5rem !important;
   width:300px !important;
   height: 50px !important;
