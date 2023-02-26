@@ -15,3 +15,45 @@ image.forEach(function (images) {
 
 
 // JS for Pet Categories
+
+
+
+
+
+// JS for cart 
+let cart = [
+    {
+        productName: '',
+        productPrice: 0
+    }
+];
+
+function buyNow(name,price){
+    cart.push({ProductName:name,ProductPrice:price});
+    localStorage.setItem("cart",JSON.stringify(cart));
+
+};
+
+cartStorage = JSON.parse(localStorage.getItem("cart"));
+let container = document.getElementById("item");
+function showCart(){
+let totalAmmount = 0;
+let itemNumber = 0;
+cartStorage.forEach(function (cartItem) {
+container.innerHTML += `
+
+<div class="about1">
+<p id="item-name">${cartItem.ProductName}</p>
+<p id="item-price">${cartItem.ProductPrice}</p>
+</div>`;
+itemNumber++;
+
+
+Removing Item from cart
+function removeItem(itemNumber){
+cart.splice(itemNumber,1);
+localStorage.setItem("cart",JSON.stringify(cart));
+container.innerHTML = "";
+showcart();
+
+}

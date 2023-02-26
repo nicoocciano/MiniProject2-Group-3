@@ -76,9 +76,9 @@
                 <div class=”image-box”>
                 <img src="https://image.chewy.com/is/image/catalog/48856_MAIN._AC_SL1200_V1660574064_.jpg" style={{ height="200px" }} />
                 </div>
-                <div class="about">
-                <h1 class="title">DOG FOOD</h1>
-                <h3 class="subtitle">50kilo</h3>
+                <div class="about" id="item">
+                <!-- <h1 class="title">DOG FOOD</h1>
+                <h3 class="subtitle">50kilo</h3> -->
                 </div>
                 <div class="counter">
                     <div class="cart-btn">+</div>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="prices">
                     <div class="amount">$50.99</div>
-                    <div class="remove">remove</div>
+                    <div class="remove" onclick="removeItem()">remove</div>
                 </div>
               
             </div>
@@ -100,7 +100,7 @@
                         <div class="items">2 items</div>
                      
                     </div>
-                    <div class="total-amount">$16.18</div>
+                    <div class="total-amount" id="total"></div>
                 </div>
                 <button class="checkout-button">Check Out</button>
             </div>
