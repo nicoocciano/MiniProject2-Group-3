@@ -63,8 +63,8 @@ img{
 .imageChoice:hover{
     width: 110px;
     height: 110px;
-    border: 2px solid white;
-    margin: 1px;
+    
+    padding: 1px;
 }
 ul{
     list-style: none;
