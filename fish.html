@@ -28,7 +28,7 @@
         <div class="alt-menu">
             <a href=""><i class="fa-solid fa-headset"></i></a>
             <a href="loginpage.html">Your Account</a>
-            <a href="">Your Cart</a>
+            <a href="" class="cart">Your Cart<span class="notification text-warning"></span></a>
           </div>
   
     </nav>
@@ -48,7 +48,7 @@
                                 <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
                                 <p class="shop-item-price">
                                     $7.99</p>
-                                    <button class="add-to-cart">Add To Cart</button>
+                                      <button class="add-to-cart" onclick="addToCart('TetraMin Tropical Flakes Fish Food','$7.99', 'https://image.chewy.com/is/image/catalog/98031_MAIN._AC_SL1200_V1550011575_.jpg')">Add To Cart</button>
                                     <button class="view-details">View Details</button>
                             </div>
                             
@@ -63,7 +63,7 @@
                         <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
                         <p class="shop-item-price">$7.58
                         </p>
-                        <button class="add-to-cart">Add To Cart</button>
+                          <button class="add-to-cart" onclick="addToCart('Aqueon Shrimp Pellets Fish Food','$7.58', 'https://image.chewy.com/is/image/catalog/753222_MAIN._AC_SL1200_V1673628415_.jpg')">Add To Cart</button>
                         <button class="view-details">View Details</button>
                     </div>
                     
@@ -78,7 +78,7 @@
                 <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
                 <p class="shop-item-price">
                     $70.98</p>
-                    <button class="add-to-cart">Add To Cart</button>
+                      <button class="add-to-cart" onclick="addToCart('Tetra BettaMin Tropical Medley Color Enhancing Fish Food, .81-oz jar','$70.98', 'https://image.chewy.com/is/image/catalog/753270_MAIN._AC_SL1200_V1673627804_.jpg')">Add To Cart</button>
                     <button class="view-details">View Details</button>
             </div>
             
@@ -92,7 +92,7 @@
             <p class="shop-item-title">TetraFin Goldfish Flakes Fish Food <br> <br></p>
             <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
             <p class="shop-item-price">$9.48</p>
-            <button class="add-to-cart">Add To Cart</button>
+              <button class="add-to-cart" onclick="addToCart('TetraFin Goldfish Flakes Fish Food','$9.48', 'https://image.chewy.com/is/image/catalog/753230_MAIN._AC_SL1200_V1673630739_.jpg')">Add To Cart</button>
             <button class="view-details">View Details</button>
         </div>
         
@@ -118,7 +118,7 @@
                                  <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
                                  <p class="shop-item-price">
                                     $70.99</p>
-                                     <button class="add-to-cart">Add To Cart</button>
+                                       <button class="add-to-cart" onclick="addToCart('Tetra TetraPro Tropical Fish Color Crisps Fish Food',' $70.99', 'https://image.chewy.com/is/image/catalog/254348_MAIN._AC_SL1200_V1602618675_.jpg')">Add To Cart</button>
                                      <button class="view-details">View Details</button>
                              </div>
                              
@@ -132,7 +132,7 @@
                          <p class="shop-item-title">Tetra Color Tropical Flakes Fish Food <br> <br></p>
                          <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
                          <p class="shop-item-price">$12.99</p>
-                         <button class="add-to-cart">Add To Cart</button>
+                           <button class="add-to-cart" onclick="addToCart('Tetra Color Tropical Flakes Fish Food','$12.99', 'https://image.chewy.com/is/image/catalog/98019_MAIN._AC_SL1200_V1607575632_.jpg')">Add To Cart</button>
                          <button class="view-details">View Details</button>
                      </div>
                      
@@ -147,7 +147,7 @@
                  <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
                  <p class="shop-item-price">
                     $6.99</p>
-                     <button class="add-to-cart">Add To Cart</button>
+                       <button class="add-to-cart" onclick="addToCart('Tetra Color Tropical Flakes Fish Food',' $6.99', 'https://image.chewy.com/is/image/catalog/98507_MAIN._AC_SL1200_V1550011692_.jpg')">Add To Cart</button>
                      <button class="view-details">View Details</button>
              </div>
              
@@ -162,7 +162,7 @@
              <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
              <p class="shop-item-price">
                 $6.98</p>
-             <button class="add-to-cart">Add To Cart</button>
+               <button class="add-to-cart" onclick="addToCart('Tetra Cichlid Flakes Cichlid Fish Food', '$6.98', 'https://image.chewy.com/is/image/catalog/98477_MAIN._AC_SL1200_V1550182481_.jpg')">Add To Cart</button>
              <button class="view-details">View Details</button>
          </div>
          
@@ -276,6 +276,51 @@
        </div>
         </div>
      </div>
+
+     <!-- Cart SideBar -->
+     <div class="cart-sidebar">
+        <span class="close-icon"><i class="fa-solid fa-square-xmark"></i></span>
+        <div class="cart-title">
+            <h4 class="head text-center">Your Cart List</h4>
+        </div>
+        <div class="cart-body text-center" style="position: relative;">
+            <h4>Quantity:<span class="cartCount text-primary fw-bold fs-5">  0</span></h4>
+            <div class="cart-item">
+                <div class="img">
+                    <!-- <img src="https://image.chewy.com/is/image/catalog/48856_MAIN._AC_SL1200_V1660574064_.jpg"> -->
+                </div>
+                <div class="carttxt">
+                    <!--  -->
+                    <!-- <h5>Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food</h5> -->
+                    <!-- <h5 class="text-success"></h5> -->
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <div class="img">
+                    <!-- <img src="https://image.chewy.com/is/image/catalog/48856_MAIN._AC_SL1200_V1660574064_.jpg"> -->
+                </div>
+                <div class="carttxt">
+                    <!--  -->
+                    <!-- <h5>Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food</h5> -->
+                    <!-- <h5 class="text-success"></h5> -->
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="img">
+                    <!-- <img src="https://image.chewy.com/is/image/catalog/48856_MAIN._AC_SL1200_V1660574064_.jpg"> -->
+                </div>
+                <div class="carttxt">
+                    <!--  -->
+                    <!-- <h5>Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food</h5> -->
+                    <!-- <h5 class="text-success"></h5> -->
+                </div>
+            </div>
+            <a class="button" href="shippingcart.html" onclick="checkoutCart()" style="position: absolute; bottom: 0;">CHECKOUT</a>
+        </div>
+     </div>
+
+
 
      <!-- Footer Start -->
      <div class="footer-upper">

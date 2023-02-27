@@ -269,10 +269,11 @@ hr{
 /* Cart Sidebar */
 .alt-menu a .cart{
   /* right: -400px; */
+  
 }
 .cart-sidebar {
   position: fixed;
-    /* right: -400px; */
+  /* right: -400px; */
   right: 0; 
   top: 0;
   width: 350px;

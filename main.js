@@ -19,6 +19,7 @@ let cartBtn = document.querySelector('.cart');
 let cartSidebar = document.querySelector('.cart-sidebar');
 let closeIcon = document.querySelector('.close-icon');
 let cartCount = document.querySelector('.cartCount');
+let cartNotification = document.querySelector('.notification');
 let cartItems = [];
 let totalPrice = 0;
     
@@ -33,6 +34,8 @@ closeIcon.onclick = function () {
 function addToCart(itemName, itemPrice, imageUrl) {
     cartItems.push({name: itemName, price: itemPrice});
     cartCount.textContent = cartItems.length;
+    cartNotification.textContent = cartItems.length;
+
     
     let cartBody = document.querySelector('.cart-body');
     let cartItem = document.createElement('div');
