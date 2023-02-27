@@ -270,12 +270,13 @@ hr{
 
 /* Cart Sidebar */
 .alt-menu a .cart{
-  right: -400px;
+  /* right: -400px; */
+  
 }
 .cart-sidebar {
   position: fixed;
-
-  /* right: 0;  */
+  /* right: -400px; */
+  right: 0; 
   top: 0;
   width: 350px;
   height: 100%;
@@ -536,8 +537,13 @@ ul{
 .category-box .index-tabs.active{
   display: block;
 }
+<<<<<<< HEAD
 .index-tabs{
 }
+=======
+/* .index-tabs{
+} */
+>>>>>>> 2d026fa9d8956fa65abd73ec9ca54ecf62c069af
 .text-muted i{
   color: gold;
 }

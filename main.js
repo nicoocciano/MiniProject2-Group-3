@@ -19,6 +19,7 @@ let cartBtn = document.querySelector('.cart');
 let cartSidebar = document.querySelector('.cart-sidebar');
 let closeIcon = document.querySelector('.close-icon');
 let cartCount = document.querySelector('.cartCount');
+let cartNotification = document.querySelector('.notification');
 let cartItems = [];
 let totalPrice = 0;
     
@@ -30,10 +31,34 @@ closeIcon.onclick = function () {
     cartSidebar.style.right = "-400px";
 }
 
-function addToCart(itemName, itemPrice ) {
+function addToCart(itemName, itemPrice, imageUrl) {
     cartItems.push({name: itemName, price: itemPrice});
     cartCount.textContent = cartItems.length;
+    cartNotification.textContent = cartItems.length;
+
     
+    let cartBody = document.querySelector('.cart-body');
+    let cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
+
+    let itemImageElement = document.createElement('img');
+    itemImageElement.setAttribute('src', imageUrl);
+    itemImageElement.setAttribute('width', '100');
+    itemImageElement.setAttribute('height', '100');
+    itemImageElement.classList.add('item-image');
+
+    let itemNameElement = document.createElement('h5');
+    itemNameElement.textContent = itemName;
+
+    let itemPriceElement = document.createElement('h5');
+    itemPriceElement.classList.add('text-success');
+    itemPriceElement.textContent = itemPrice;
+
+    cartItem.appendChild(itemImageElement);
+    cartItem.appendChild(itemNameElement);
+    cartItem.appendChild(itemPriceElement);
+    
+    cartBody.appendChild(cartItem);
 }
 
 cartBtn.addEventListener('click', function () {
@@ -44,6 +69,7 @@ cartBtn.addEventListener('click', function () {
 closeIcon.addEventListener('click', function () {
     cartSidebar.style.right = "-400px";
 });
+
 
 function checkoutCart() {
   let cartBody = document.querySelector('.cart-body');
