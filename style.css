@@ -268,12 +268,12 @@ hr{
 
 /* Cart Sidebar */
 .alt-menu a .cart{
-  right: -400px;
+  /* right: -400px; */
 }
 .cart-sidebar {
   position: fixed;
-
-  /* right: 0;  */
+    /* right: -400px; */
+  right: 0; 
   top: 0;
   width: 350px;
   height: 100%;
@@ -527,20 +527,14 @@ ul{
   border-radius: 10px;  
   margin-left: 0px;
 }
-<<<<<<< HEAD
 .category-box .index-tabs{
   display: none;
 }
 .category-box .index-tabs.active{
   display: block;
 }
-.index-tabs{
-}
-=======
 /* .index-tabs{
-
 } */
->>>>>>> 1f05816e663473ba0373f5481653f856663d46fa
 .text-muted i{
   color: gold;
 }
