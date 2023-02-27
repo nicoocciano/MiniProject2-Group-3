@@ -61,14 +61,14 @@ function addToCart(itemName, itemPrice, imageUrl) {
     cartBody.appendChild(cartItem);
 }
 
-cartBtn.addEventListener('click', function () {
-    cartSidebar.style.right = "0";
+// cartBtn.addEventListener('click', function () {
+//     cartSidebar.style.right = "0";
     
-});
+// });
 
-closeIcon.addEventListener('click', function () {
-    cartSidebar.style.right = "-400px";
-});
+// closeIcon.addEventListener('click', function () {
+//     cartSidebar.style.right = "-400px";
+// });
 
 
 function checkoutCart() {
@@ -91,6 +91,7 @@ function checkoutCart() {
         <h5 class="text-success">${item.price}</h5>
     `;
 
+    let cartItems = document.querySelectorAll('.cart-items');
     cartItem.appendChild(img);
     cartItem.appendChild(carttxt);
     cartBody.appendChild(cartItem);
@@ -113,9 +114,12 @@ function checkoutCart() {
   });
 }
 
+function success(){
+    alert('Thank you for completing the order! We will be in touch with you soon.');
 
 
 
+}
 
 
 

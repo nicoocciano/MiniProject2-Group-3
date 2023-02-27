@@ -265,8 +265,6 @@ hr{
   }
 }
 /**END OF SHOPPING CART****************/
-<<<<<<< HEAD
-=======
 
 /* Cart Sidebar */
 .alt-menu a .cart{
@@ -345,7 +343,6 @@ hr{
   top: 10px;
   cursor: pointer;
 }
->>>>>>> 17d1b9efb89a0d003319644af5b1124ef976274f
 /* carousel */
 .carousel-item img{
   object-fit: cover;
@@ -537,13 +534,8 @@ ul{
 .category-box .index-tabs.active{
   display: block;
 }
-<<<<<<< HEAD
 .index-tabs{
 }
-=======
-/* .index-tabs{
-} */
->>>>>>> 2d026fa9d8956fa65abd73ec9ca54ecf62c069af
 .text-muted i{
   color: gold;
 }

@@ -12,10 +12,10 @@
 </head>
 <body>
     <div id="Top"></div>
-    <nav>
+    <nav class="sticky-top">
         <a class="Logo" href="index.html"><h1>Purrfect</h1></a>
         <div class="search">
-            <input type="text" placeholder="   Search">
+            <input type="text" placeholder="Search">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="alt-menu">
@@ -70,7 +70,7 @@
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <input type="submit" value="Continue to checkout" class="btn">
+        <input type="submit" value="Continue to checkout" class="btn" onclick="success()">
       </form>
     </div>
   </div>
@@ -135,4 +135,5 @@
     <!-- Footer Ends -->
 </body>
 <script src="js/bootstrap.bundle.js"></script>
+<script src="main.js"></script>
 </html>
