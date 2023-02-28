@@ -181,7 +181,18 @@ function showCart(){
     let cartStorage = JSON.parse(localStorage.getItem("cartData"));
     let cartDiv = document.getElementById('cart-storage');
     cartStorage.forEach(function(cartItem){
-        cartDiv.innerHTML += `<div>Name: ${cartItem.name} | Price: ${cartItem.price}</div>`;
+        cartDiv.innerHTML += `<div class="row bg-dark">
+         <div class="col col-lg-4 cart-item-name">
+        <p>${cartItem.name}</p>
+    </div>
+    <div class="col-lg-4 cart-item-price">
+        <p>${cartItem.price}</p>
+    </div>
+    <div class="col-lg-4 cart-item-button">
+        <button>remove</button>
+    </div>
+    </div>
+       `;
     });
 }
 
