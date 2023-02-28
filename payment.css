@@ -7,45 +7,17 @@ body{
 .Logo{
     font-size: larger;
 }
-nav{
-    background: #1C49C2;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-nav a{
-    color: white;
-    text-decoration: none;
-    font-family: 'chewy';
-}
-nav input{
-    width: 400px;
-    height: 5vh;
-    border-radius: 10px;
-    border: none;
-}
-nav i {
-    font-size: 20px;
-}
-.alt-menu a {
-    padding: 20px;
-}
-.search{
-    color: white;
-    font-family: 'chewy';
-}
-.search i{
-    position: relative;
-    
-}
+
 .row1 {
   display: -ms-flexbox; 
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 -16px;
+}
+.search{
+  color: white;
+  font-family: 'chewy';
 }
 
 .col-25 {
@@ -100,7 +72,7 @@ label {
 }
 
 .btn {
-  background-color: #04AA6D;
+  background-color: #3186e7;
   color: white;
   padding: 12px;
   margin: 10px 0;
@@ -110,7 +82,18 @@ label {
   cursor: pointer;
   font-size: 17px;
 }
+.search input{
 
+  width: 400px;
+  border-radius: 10px;
+ 
+}
+@media screen and (max-width:790px){
+    .search input{
+      width: 100%;
+    
+    }
+}
 .btn:hover {
   background-color: #3186e7;
 }

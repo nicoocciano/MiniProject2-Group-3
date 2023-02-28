@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
     <script src="https://kit.fontawesome.com/77b7313188.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -49,7 +50,73 @@
                                  <p class="shop-item-price">
                                      $77.99</p>
                                      <button class="add-to-cart" onclick="addToCart('Royal Canin Veterinary Diet Adult Gastrointestinal Moderate Calorie Dry Cat Food, 7.7-lb bag','$77.99', 'https://image.chewy.com/is/image/catalog/61807_MAIN._AC_SL1200_V1638840778_.jpg')">Add To Cart</button>
-                                     <button class="view-details">View Details</button>
+                                     <!------------- BUTTON MODAL 3 **************************** -->
+            <!-- Button trigger modal -->
+<button type="button" class="view-details" data-bs-toggle="modal" data-bs-target="#exampleModal1.1" style="text-decoration: none; color: white;">
+    View Details
+   </button>
+   
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal1.1" tabindex="-1" aria-labelledby="exampleModalLabel1.1" aria-hidden="true">
+     <div class="modal-dialog modal-xl">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel1.1"></h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+             <div class="container">
+                 <section class="wrapper mt-3" style="background: #edede9;">
+                     <div class="row">
+                         <div class="col-lg-6">
+                             <img id="mainImage" src="https://image.chewy.com/is/image/catalog/48856_MAIN._AC_SL1200_V1660574064_.jpg">
+                             <div class="image-wrapper">
+                                 <img src="https://image.chewy.com/is/image/catalog/48856_MAIN._AC_SL1200_V1660574064_.jpg" class="imageChoice">
+                                 <img src="https://image.chewy.com/is/image/catalog/48856_PT3._AC_SL600_V1634575880_.jpg" class="imageChoice">
+                                 <img src="https://image.chewy.com/is/image/catalog/48856_PT4._AC_SL1200_V1634575578_.jpg" class="imageChoice">
+                                 <img src="https://image.chewy.com/is/image/catalog/48856_PT5._AC_SL1200_V1634575573_.jpg" class="imageChoice">
+                                 <img src="https://image.chewy.com/is/image/catalog/48856_PT6._AC_SL1200_V1634576506_.jpg" class="imageChoice">
+                             </div>
+                         </div>
+                             <div class="shop-right col-lg-6">
+                                 <h1 class="shop-title ms-3 mt-3 pt-3">Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food</h1>
+                                 <ul class="d-flex">
+                                     <li><i class="fa fa-star checked"></i></li>
+                                     <li><i class="fa fa-star checked"></i></li>
+                                     <li><i class="fa fa-star checked"></i></li>
+                                     <li><i class="fa fa-star checked texted muted"></i></li>
+                                     <li><i class="fa fa-star checked texted muted"></i></li><span class="text-muted ms-2"> 100 Reviews</span>
+                                 </ul> <hr class="text-dark">
+                                 <!-- Example single danger button -->
+                                 
+                                 <div class="shop-group">
+                                     <div class="row d-flex">
+                                         <div class="col-md-6">
+                                             <h4 class="text-success ms-3 mt-3 pt-3">$76.99</h4>
+                                         </div>
+                                     </div>
+                                 </div> <hr class="text-dark">
+                                 <ul class="auto">Why Auto Ship?
+                                   <li>Save 5% on all future Autoship orders</li>
+                                   <li>Set your schedule based on your pet's needs</li>
+                                   <li>No fees, no commitments - skip, change or cancel anytime.</li>
+             
+                                 </ul>
+                                 <button class="shop-button" id="" onclick="buyNow('');">Add to Cart</button>
+                             </div>
+                         </div>
+                     </div>
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+     
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+<!-- MODAL END ********* --------------------------------->
                              </div>
                              
                          </div>
@@ -63,7 +130,7 @@
                          <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
                          <p class="shop-item-price">$6.99</p>
                          <button class="add-to-cart" onclick="addToCart('Royal Canin Feline Health Nutrition Mother & Babycat Ultra Soft Mousse in Sauce Canned Cat Food','$6.99', 'https://image.chewy.com/is/image/catalog/272674_MAIN._AC_SL1200_V1613055081_.jpg')">Add To Cart</button>
-                         <button class="view-details">View Details</button>
+                         <button class="view-details"><a href="shop.html" style="text-decoration: none; color: white;">View Details</a></button>
                      </div>
                      
                  </div>
@@ -78,7 +145,7 @@
                  <p class="shop-item-price">
                     $6.99</p>
                     <button class="add-to-cart" onclick="addToCart('Royal Canin Feline Health Nutrition Kitten Thin Slices in Gravy Canned Cat Food, 3-oz can, case of 24','$6.99', 'https://image.chewy.com/is/image/catalog/48733_MAIN._AC_SL1200_V1652832407_.jpg')">Add To Cart</button>
-                     <button class="view-details">View Details</button>
+                    <button class="view-details"><a href="shop.html" style="text-decoration: none; color: white;">View Details</a></button>
              </div>
              
          </div>
@@ -93,7 +160,7 @@
              <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
              <p class="shop-item-price">$11.99</p>
              <button class="add-to-cart" onclick="addToCart('Royal Canin Feline Health Nutrition Adult Instinctive Thin Slices in Gravy Canned Cat Food, 3-oz, case of 24','$11.99', 'https://image.chewy.com/is/image/catalog/48725_MAIN._AC_SL1200_V1652829701_.jpg')">Add To Cart</button>
-             <button class="view-details">View Details</button>
+             <button class="view-details"><a href="shop.html" style="text-decoration: none; color: white;">View Details</a></button>
          </div>
          
      </div>
@@ -116,7 +183,7 @@
                              <p class="shop-item-price">
                                  $70.98</p>
                                    <button class="add-to-cart" onclick="addToCart('Meow Mix Original Choice Dry Cat Food','$70.98', 'https://image.chewy.com/is/image/catalog/99965_MAIN._AC_SL1200_V1661377312_.jpg')">Add To Cart</button>
-                                 <button class="view-details">View Details</button>
+                                   <button class="view-details"><a href="shop.html" style="text-decoration: none; color: white;">View Details</a></button>
                          </div>
                          
                      </div>
@@ -134,7 +201,7 @@
                                   <p class="shop-item-price">
                                      $70.99</p>
                                         <button class="add-to-cart" onclick="addToCart('Royal Canin Feline Health Nutrition Kitten Dry Cat Food',' $70.99', 'https://image.chewy.com/is/image/catalog/68402_MAIN._AC_SL1200_V1531231386_.jpg')">Add To Cart</button>
-                                      <button class="view-details">View Details</button>
+                                        <button class="view-details"><a href="shop.html" style="text-decoration: none; color: white;">View Details</a></button>
                               </div>
                               
                           </div>
@@ -148,7 +215,72 @@
                           <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
                           <p class="shop-item-price">$112.99</p>
                             <button class="add-to-cart" onclick="addToCart('Royal Canin Veterinary Diet Adult Gastrointestinal Dry Cat Food, 8.8-lb bag','$112.99', 'https://image.chewy.com/is/image/catalog/48752_MAIN._AC_SL1200_V1588962967_.jpg')">Add To Cart</button>
-                          <button class="view-details">View Details</button>
+                            <!------------- BUTTON MODAL 3 **************************** -->
+            <button type="button" class="view-details" data-bs-toggle="modal" data-bs-target="#exampleModal6" style="text-decoration: none; color: white;">
+                View Details
+               </button>
+               
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                 <div class="modal-dialog modal-xl">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                       <h5 class="modal-title" id="exampleModalLabel6"></h5>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                         <div class="container">
+                             <section class="wrapper mt-3" style="background: #edede9;">
+                                 <div class="row">
+                                     <div class="col-lg-6">
+                                         <img id="mainImage" src="https://image.chewy.com/is/image/catalog/89568_MAIN._AC_SL1200_V1650733592_.jpg">
+                                         <div class="image-wrapper">
+                                             <img src="https://image.chewy.com/is/image/catalog/89568_MAIN._AC_SL1200_V1650733592_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114164_PT2._AC_SL1200_V1598539857_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT3._AC_SL1200_V1598539874_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT4._AC_SL1200_V1598539878_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT5._AC_SL1200_V1598539881_.jpg" class="imageChoice">
+                                         </div>
+                                     </div>
+                                         <div class="shop-right col-lg-6">
+                                             <h1 class="shop-title ms-3 mt-3 pt-3">Hill's Prescription Diet Metabolic + Mobility j/d Chicken Flavor Dry Dog Food</h1>
+                                             <ul class="d-flex">
+                                                 <li><i class="fa fa-star checked"></i></li>
+                                                 <li><i class="fa fa-star checked"></i></li>
+                                                 <li><i class="fa fa-star checked"></i></li>
+                                                 <li><i class="fa fa-star checked texted muted"></i></li>
+                                                 <li><i class="fa fa-star checked texted muted"></i></li><span class="text-muted ms-2"> 100 Reviews</span>
+                                             </ul> <hr class="text-dark">
+                                             <!-- Example single danger button -->
+                                             
+                                             <div class="shop-group">
+                                                 <div class="row d-flex">
+                                                     <div class="col-md-6">
+                                                         <h4 class="text-success ms-3 mt-3 pt-3">$112.99</h4>
+                                                     </div>
+                                                 </div>
+                                             </div> <hr class="text-dark">
+                                             <ul class="auto">Why Auto Ship?
+                                               <li>Save 5% on all future Autoship orders</li>
+                                               <li>Set your schedule based on your pet's needs</li>
+                                               <li>No fees, no commitments - skip, change or cancel anytime.</li>
+                         
+                                             </ul>
+                                             <button class="shop-button" id="" onclick="buyNow('');">Add to Cart</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                     </div>
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+
+<!-- MODAL END ********* --------------------------------->
                       </div>
                       
                   </div>
@@ -164,7 +296,7 @@
               <p class="shop-item-price">
                  $38.04</p>
                 <button class="add-to-cart" onclick="addToCart('Royal Canin Indoor Adult Dry Cat Food',' $38.04', 'https://image.chewy.com/is/image/catalog/48674_MAIN._AC_SL1200_V1491503813_.jpg')">Add To Cart</button>
-              <button class="view-details">View Details</button>
+                <button class="view-details"><a href="shop.html" style="text-decoration: none; color: white;">View Details</a></button>
           </div> 
       </div> 
   </div>
@@ -211,7 +343,7 @@
                 <!-- <h5 class="text-success"></h5> -->
             </div>
         </div>
-        <a class="button" href="shippingcart.html" onclick="checkoutCart()" style="position: absolute; bottom: 0;">CHECKOUT</a>
+        <a class="button" href="shippingcart.html" onclick="checkoutCart()" style="position: absolute; bottom: 0;">CONFIRM</a>
     </div>
  </div>
 

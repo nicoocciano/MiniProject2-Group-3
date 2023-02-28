@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
@@ -16,6 +16,7 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+ 
 }
 nav a{
     color: white;
@@ -49,8 +50,13 @@ img{
 .wrapper{
  background: white !important;
 }
+.ms-3{
+  background: none;
+  border: none;
+}
 #mainImage{
-    width: 100%;
+    margin-left: 100px;
+    width: 350px;
     height: 500px;
     object-fit: cover;
     margin-bottom: 10px;
@@ -64,6 +70,12 @@ img{
 .imageChoice.active{
   border: #000 solid 1px;
   border-radius: 200px;
+}
+.shop-right {
+
+}
+.shop-right{
+
 }
 ul{
     list-style: none;
@@ -84,6 +96,19 @@ ul{
     width: 300px;
     height: 300px;
 }
+.image-wrapper img{
+  width: 100px;
+  height: 100px;
+  
+}
+.image-wrapper{
+  overflow: auto;
+
+  width: 100%;
+}
+.btn-secondary{
+  background: #1C49C2 !important;
+}
 .shop-button{
   margin-top: 50px;
   background: #ef6c00;
@@ -93,7 +118,8 @@ ul{
   font-weight: 600;
   color: white;
 }
-select {
+
+select{
   background: red;
 margin: 0;
 padding: 0 0.75em 0 0;

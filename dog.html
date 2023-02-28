@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
     <script src="https://kit.fontawesome.com/77b7313188.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -48,13 +49,80 @@
                                 <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
                                 <p class="shop-item-price">$77.99</p>
                                     <button class="add-to-cart" onclick="addToCart('Hills Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food','$77.99', 'https://image.chewy.com/is/image/catalog/48856_MAIN._AC_SL1200_V1660574064_.jpg')">Add To Cart</button>
-                                    <button class="view-details">View Details</button>
+                                    
+    
+
+<!-- Button trigger modal -->
+<button type="button" class="view-details" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; color: white;">
+   View Details
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <section class="wrapper mt-3" style="background: #edede9;">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img id="mainImage" src="https://image.chewy.com/is/image/catalog/48856_MAIN._AC_SL1200_V1660574064_.jpg">
+                            <div class="image-wrapper">
+                                <img src="https://image.chewy.com/is/image/catalog/48856_MAIN._AC_SL1200_V1660574064_.jpg" class="imageChoice">
+                                <img src="https://image.chewy.com/is/image/catalog/48856_PT3._AC_SL600_V1634575880_.jpg" class="imageChoice">
+                                <img src="https://image.chewy.com/is/image/catalog/48856_PT4._AC_SL1200_V1634575578_.jpg" class="imageChoice">
+                                <img src="https://image.chewy.com/is/image/catalog/48856_PT5._AC_SL1200_V1634575573_.jpg" class="imageChoice">
+                                <img src="https://image.chewy.com/is/image/catalog/48856_PT6._AC_SL1200_V1634576506_.jpg" class="imageChoice">
                             </div>
-                            
+                        </div>
+                            <div class="shop-right col-lg-6">
+                                <h1 class="shop-title ms-3 mt-3 pt-3">Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food</h1>
+                                <ul class="d-flex">
+                                    <li><i class="fa fa-star checked"></i></li>
+                                    <li><i class="fa fa-star checked"></i></li>
+                                    <li><i class="fa fa-star checked"></i></li>
+                                    <li><i class="fa fa-star checked texted muted"></i></li>
+                                    <li><i class="fa fa-star checked texted muted"></i></li><span class="text-muted ms-2"> 100 Reviews</span>
+                                </ul> <hr class="text-dark">
+                                <!-- Example single danger button -->
+                                
+                                <div class="shop-group">
+                                    <div class="row d-flex">
+                                        <div class="col-md-6">
+                                            <h4 class="text-success ms-3 mt-3 pt-3">$76.99</h4>
+                                        </div>
+                                    </div>
+                                </div> <hr class="text-dark">
+                                <ul class="auto">Why Auto Ship?
+                                  <li>Save 5% on all future Autoship orders</li>
+                                  <li>Set your schedule based on your pet's needs</li>
+                                  <li>No fees, no commitments - skip, change or cancel anytime.</li>
+            
+                                </ul>
+                                <button class="shop-button" id="" onclick="buyNow('');">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+                            </div>   
                         </div>
                         
             </div>
             <div class="col col-lg-3 col-md-6">
+                <!-- /********************************************************/ -->
                 <div class="shop-items" id="item2">
                     <img src="https://image.chewy.com/is/image/catalog/83147_MAIN._AC_SL1200_V1601541060_.jpg" alt="">
                     <div class="shop-item-content">
@@ -62,12 +130,79 @@
                         <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
                         <p class="shop-item-price">$6.99</p>
                         <button class="add-to-cart" onclick="addToCart('Hills Natural Soft Savories with Peanut Butter & Banana Dog Treats, 8-oz bag','$6.99', 'https://image.chewy.com/is/image/catalog/83147_MAIN._AC_SL1200_V1601541060_.jpg')">Add To Cart</button>
-                        <button class="view-details">View Details</button>
+     <!------------- BUTTON MODAL **************************** -->
+                        <button type="button" class="view-details" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="text-decoration: none; color: white;">
+                            View Details
+                           </button>
+                           
+                           <!-- Modal -->
+                           <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                             <div class="modal-dialog modal-xl">
+                               <div class="modal-content">
+                                 <div class="modal-header">
+                                   <h5 class="modal-title" id="exampleModalLabel2"></h5>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                     <div class="container">
+                                         <section class="wrapper mt-3" style="background: #edede9;">
+                                             <div class="row">
+                                                 <div class="col-lg-6">
+                                                     <img id="mainImage" src="https://image.chewy.com/is/image/catalog/83147_MAIN._AC_SL1200_V1601541060_.jpg">
+                                                     <div class="image-wrapper">
+                                                         <img src="https://image.chewy.com/is/image/catalog/83147_MAIN._AC_SL1200_V1601541060_.jpg" class="imageChoice">
+                                                         <img src="https://image.chewy.com/is/image/catalog/83147_PT3._AC_SL1200_V1609376239_.jpg" class="imageChoice">
+                                                         <img src="https://image.chewy.com/is/image/catalog/83147_PT4._AC_SL1200_V1609373842_.jpg" class="imageChoice">
+                                                         <img src="https://image.chewy.com/is/image/catalog/83147_PT5._AC_SL1200_V1609372946_.jpg" class="imageChoice">
+                                                         <img src="https://image.chewy.com/is/image/catalog/83147_PT6._AC_SL1200_V1609374740_.jpg" class="imageChoice">
+                                                     </div>
+                                                 </div>
+                                                     <div class="shop-right col-lg-6">
+                                                         <h1 class="shop-title ms-3 mt-3 pt-3">Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Dog Food</h1>
+                                                         <ul class="d-flex">
+                                                             <li><i class="fa fa-star checked"></i></li>
+                                                             <li><i class="fa fa-star checked"></i></li>
+                                                             <li><i class="fa fa-star checked"></i></li>
+                                                             <li><i class="fa fa-star checked texted muted"></i></li>
+                                                             <li><i class="fa fa-star checked texted muted"></i></li><span class="text-muted ms-2"> 100 Reviews</span>
+                                                         </ul> <hr class="text-dark">
+                                                         <!-- Example single danger button -->
+                                                         
+                                                         <div class="shop-group">
+                                                             <div class="row d-flex">
+                                                                 <div class="col-md-6">
+                                                                     <h4 class="text-success ms-3 mt-3 pt-3">$6.99</h4>
+                                                                 </div>
+                                                             </div>
+                                                         </div> <hr class="text-dark">
+                                                         <ul class="auto">Why Auto Ship?
+                                                           <li>Save 5% on all future Autoship orders</li>
+                                                           <li>Set your schedule based on your pet's needs</li>
+                                                           <li>No fees, no commitments - skip, change or cancel anytime.</li>
+                                     
+                                                         </ul>
+                                                         <button class="shop-button" id="" onclick="buyNow('');">Add to Cart</button>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                 </div>
+                                 <div class="modal-footer">
+                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                             
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+
+
+    <!-- MODAL END ********* --------------------------------->
                     </div>
                     
                 </div>
                 
     </div>
+       <!-- /********************************************************/ -->
+   
     <div class="col col-lg-3 col-md-6">
         <div class="shop-items">
             <img src="https://image.chewy.com/is/image/catalog/114163_MAIN._AC_SL1200_V1658434947_.jpg" alt="">
@@ -77,7 +212,72 @@
                 <p class="shop-item-price">
                     $70.98</p>
                     <button class="add-to-cart" onclick="addToCart('Hills Science Diet Adult Small Bites Chicken & Barley Recipe Dry Dog Food','$70.98', 'https://image.chewy.com/is/image/catalog/114163_MAIN._AC_SL1200_V1658434947_.jpg')">Add To Cart</button>
-                    <button class="view-details">View Details</button>
+                    <!------------- BUTTON MODAL 3 **************************** -->
+                    <button type="button" class="view-details" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="text-decoration: none; color: white;">
+                        View Details
+                       </button>
+                       
+                       <!-- Modal -->
+                       <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                         <div class="modal-dialog modal-xl">
+                           <div class="modal-content">
+                             <div class="modal-header">
+                               <h5 class="modal-title" id="exampleModalLabel3"></h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                             </div>
+                             <div class="modal-body">
+                                 <div class="container">
+                                     <section class="wrapper mt-3" style="background: #edede9;">
+                                         <div class="row">
+                                             <div class="col-lg-6">
+                                                 <img id="mainImage" src="https://image.chewy.com/is/image/catalog/114163_MAIN._AC_SL1200_V1658434947_.jpg">
+                                                 <div class="image-wrapper">
+                                                     <img src="https://image.chewy.com/is/image/catalog/114163_MAIN._AC_SL1200_V1658434947_.jpg" class="imageChoice">
+                                                     <img src="https://image.chewy.com/is/image/catalog/114163_PT2._AC_SL1200_V1598539868_.jpg" class="imageChoice">
+                                                     <img src="https://image.chewy.com/is/image/catalog/114163_PT3._AC_SL1200_V1598539874_.jpg" class="imageChoice">
+                                                     <img src="https://image.chewy.com/is/image/catalog/114163_PT4._AC_SL1200_V1598539878_.jpg" class="imageChoice">
+                                                     <img src="https://image.chewy.com/is/image/catalog/114163_PT5._AC_SL1200_V1598539881_.jpg" class="imageChoice">
+                                                 </div>
+                                             </div>
+                                                 <div class="shop-right col-lg-6">
+                                                     <h1 class="shop-title ms-3 mt-3 pt-3">Hill's Science Diet Adult Small Bites Chicken & Barley Recipe Dry Dog Food</h1>
+                                                     <ul class="d-flex">
+                                                         <li><i class="fa fa-star checked"></i></li>
+                                                         <li><i class="fa fa-star checked"></i></li>
+                                                         <li><i class="fa fa-star checked"></i></li>
+                                                         <li><i class="fa fa-star checked texted muted"></i></li>
+                                                         <li><i class="fa fa-star checked texted muted"></i></li><span class="text-muted ms-2"> 100 Reviews</span>
+                                                     </ul> <hr class="text-dark">
+                                                     <!-- Example single danger button -->
+                                                     
+                                                     <div class="shop-group">
+                                                         <div class="row d-flex">
+                                                             <div class="col-md-6">
+                                                                 <h4 class="text-success ms-3 mt-3 pt-3">$70.98</h4>
+                                                             </div>
+                                                         </div>
+                                                     </div> <hr class="text-dark">
+                                                     <ul class="auto">Why Auto Ship?
+                                                       <li>Save 5% on all future Autoship orders</li>
+                                                       <li>Set your schedule based on your pet's needs</li>
+                                                       <li>No fees, no commitments - skip, change or cancel anytime.</li>
+                                 
+                                                     </ul>
+                                                     <button class="shop-button" id="" onclick="buyNow('');">Add to Cart</button>
+                                                 </div>
+                                             </div>
+                                         </div>
+                             </div>
+                             <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                         
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+
+
+<!-- MODAL END ********* --------------------------------->
             </div>
             
         </div>
@@ -91,7 +291,72 @@
             <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
             <p class="shop-item-price">$11.99</p>
             <button class="add-to-cart" onclick="addToCart('Hills Prescription Diet Soft Baked Soft & Chewy Dog Treats, 12-oz bag and 16-oz bag','$11.99','https://image.chewy.com/is/image/catalog/112579_MAIN._AC_SL1200_V1669947353_.jpg')">Add To Cart</button>
-            <button class="view-details">View Details</button>
+            <!------------- BUTTON MODAL 3 **************************** -->
+            <button type="button" class="view-details" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="text-decoration: none; color: white;">
+                View Details
+               </button>
+               
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                 <div class="modal-dialog modal-xl">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                       <h5 class="modal-title" id="exampleModalLabel4"></h5>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                         <div class="container">
+                             <section class="wrapper mt-3" style="background: #edede9;">
+                                 <div class="row">
+                                     <div class="col-lg-6">
+                                         <img id="mainImage" src="https://image.chewy.com/is/image/catalog/112579_MAIN._AC_SL1200_V1669947353_.jpg">
+                                         <div class="image-wrapper">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_MAIN._AC_SL1200_V1658434947_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT2._AC_SL1200_V1598539868_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT3._AC_SL1200_V1598539874_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT4._AC_SL1200_V1598539878_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT5._AC_SL1200_V1598539881_.jpg" class="imageChoice">
+                                         </div>
+                                     </div>
+                                         <div class="shop-right col-lg-6">
+                                             <h1 class="shop-title ms-3 mt-3 pt-3">Hill's Prescription Diet Soft Baked Soft & Chewy Dog Treats, 12-oz bag and 16-oz bag</h1>
+                                             <ul class="d-flex">
+                                                 <li><i class="fa fa-star checked"></i></li>
+                                                 <li><i class="fa fa-star checked"></i></li>
+                                                 <li><i class="fa fa-star checked"></i></li>
+                                                 <li><i class="fa fa-star checked texted muted"></i></li>
+                                                 <li><i class="fa fa-star checked texted muted"></i></li><span class="text-muted ms-2"> 100 Reviews</span>
+                                             </ul> <hr class="text-dark">
+                                             <!-- Example single danger button -->
+                                             
+                                             <div class="shop-group">
+                                                 <div class="row d-flex">
+                                                     <div class="col-md-6">
+                                                         <h4 class="text-success ms-3 mt-3 pt-3">$11.99</h4>
+                                                     </div>
+                                                 </div>
+                                             </div> <hr class="text-dark">
+                                             <ul class="auto">Why Auto Ship?
+                                               <li>Save 5% on all future Autoship orders</li>
+                                               <li>Set your schedule based on your pet's needs</li>
+                                               <li>No fees, no commitments - skip, change or cancel anytime.</li>
+                         
+                                             </ul>
+                                             <button class="shop-button" id="" onclick="buyNow('');">Add to Cart</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                     </div>
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+
+<!-- MODAL END ********* --------------------------------->
         </div>
         
     </div>
@@ -101,7 +366,7 @@
                
             </div>
    </div>
-
+   <!-- /********************************************************/ -->
    <div class="shop">
     <h4>Recommended</h4>
              <div class="row">
@@ -117,7 +382,72 @@
                                  <p class="shop-item-price">
                                     $70.99</p>
                                      <button class="add-to-cart" onclick="addToCart('Hills Science Diet Adult Chicken & Barley Recipe Dry Dog Food',' $70.99','https://image.chewy.com/is/image/catalog/114164_MAIN._AC_SL1200_V1658461723_.jpg')">Add To Cart</button>
-                                     <button class="view-details">View Details</button>
+                                      <!------------- BUTTON MODAL 3 **************************** -->
+            <button type="button" class="view-details" data-bs-toggle="modal" data-bs-target="#exampleModal5" style="text-decoration: none; color: white;">
+                View Details
+               </button>
+               
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                 <div class="modal-dialog modal-xl">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                       <h5 class="modal-title" id="exampleModalLabel5"></h5>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                         <div class="container">
+                             <section class="wrapper mt-3" style="background: #edede9;">
+                                 <div class="row">
+                                     <div class="col-lg-6">
+                                         <img id="mainImage" src="https://image.chewy.com/is/image/catalog/114164_MAIN._AC_SL1200_V1658461723_.jpg">
+                                         <div class="image-wrapper">
+                                             <img src="https://image.chewy.com/is/image/catalog/114164_MAIN._AC_SL1200_V1658461723_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT2._AC_SL1200_V1598539868_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT3._AC_SL1200_V1598539874_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT4._AC_SL1200_V1598539878_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT5._AC_SL1200_V1598539881_.jpg" class="imageChoice">
+                                         </div>
+                                     </div>
+                                         <div class="shop-right col-lg-6">
+                                             <h1 class="shop-title ms-3 mt-3 pt-3">>Hill's Science Diet Adult Chicken & Barley Recipe Dry Dog Food</h1>
+                                             <ul class="d-flex">
+                                                 <li><i class="fa fa-star checked"></i></li>
+                                                 <li><i class="fa fa-star checked"></i></li>
+                                                 <li><i class="fa fa-star checked"></i></li>
+                                                 <li><i class="fa fa-star checked texted muted"></i></li>
+                                                 <li><i class="fa fa-star checked texted muted"></i></li><span class="text-muted ms-2"> 100 Reviews</span>
+                                             </ul> <hr class="text-dark">
+                                             <!-- Example single danger button -->
+                                             
+                                             <div class="shop-group">
+                                                 <div class="row d-flex">
+                                                     <div class="col-md-6">
+                                                         <h4 class="text-success ms-3 mt-3 pt-3">$70.99</h4>
+                                                     </div>
+                                                 </div>
+                                             </div> <hr class="text-dark">
+                                             <ul class="auto">Why Auto Ship?
+                                               <li>Save 5% on all future Autoship orders</li>
+                                               <li>Set your schedule based on your pet's needs</li>
+                                               <li>No fees, no commitments - skip, change or cancel anytime.</li>
+                         
+                                             </ul>
+                                             <button class="shop-button" id="" onclick="buyNow('');">Add to Cart</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                     </div>
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+
+<!-- MODAL END ********* --------------------------------->
                              </div>
                              
                          </div>
@@ -131,7 +461,72 @@
                          <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
                          <p class="shop-item-price">$112.99</p>
                          <button class="add-to-cart" onclick="addToCart('Hills Prescription Diet Metabolic + Mobility j/d Chicken Flavor Dry Dog Food','$112.99','https://image.chewy.com/is/image/catalog/89568_MAIN._AC_SL1200_V1650733592_.jpg')">Add To Cart</button>
-                         <button class="view-details">View Details</button>
+                         <!------------- BUTTON MODAL 3 **************************** -->
+            <button type="button" class="view-details" data-bs-toggle="modal" data-bs-target="#exampleModal6" style="text-decoration: none; color: white;">
+                View Details
+               </button>
+               
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+                 <div class="modal-dialog modal-xl">
+                   <div class="modal-content">
+                     <div class="modal-header">
+                       <h5 class="modal-title" id="exampleModalLabel6"></h5>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                         <div class="container">
+                             <section class="wrapper mt-3" style="background: #edede9;">
+                                 <div class="row">
+                                     <div class="col-lg-6">
+                                         <img id="mainImage" src="https://image.chewy.com/is/image/catalog/89568_MAIN._AC_SL1200_V1650733592_.jpg">
+                                         <div class="image-wrapper">
+                                             <img src="https://image.chewy.com/is/image/catalog/89568_MAIN._AC_SL1200_V1650733592_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114164_PT2._AC_SL1200_V1598539857_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT3._AC_SL1200_V1598539874_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT4._AC_SL1200_V1598539878_.jpg" class="imageChoice">
+                                             <img src="https://image.chewy.com/is/image/catalog/114163_PT5._AC_SL1200_V1598539881_.jpg" class="imageChoice">
+                                         </div>
+                                     </div>
+                                         <div class="shop-right col-lg-6">
+                                             <h1 class="shop-title ms-3 mt-3 pt-3">Hill's Prescription Diet Metabolic + Mobility j/d Chicken Flavor Dry Dog Food</h1>
+                                             <ul class="d-flex">
+                                                 <li><i class="fa fa-star checked"></i></li>
+                                                 <li><i class="fa fa-star checked"></i></li>
+                                                 <li><i class="fa fa-star checked"></i></li>
+                                                 <li><i class="fa fa-star checked texted muted"></i></li>
+                                                 <li><i class="fa fa-star checked texted muted"></i></li><span class="text-muted ms-2"> 100 Reviews</span>
+                                             </ul> <hr class="text-dark">
+                                             <!-- Example single danger button -->
+                                             
+                                             <div class="shop-group">
+                                                 <div class="row d-flex">
+                                                     <div class="col-md-6">
+                                                         <h4 class="text-success ms-3 mt-3 pt-3">$112.99</h4>
+                                                     </div>
+                                                 </div>
+                                             </div> <hr class="text-dark">
+                                             <ul class="auto">Why Auto Ship?
+                                               <li>Save 5% on all future Autoship orders</li>
+                                               <li>Set your schedule based on your pet's needs</li>
+                                               <li>No fees, no commitments - skip, change or cancel anytime.</li>
+                         
+                                             </ul>
+                                             <button class="shop-button" id="" onclick="buyNow('');">Add to Cart</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                     </div>
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+
+<!-- MODAL END ********* --------------------------------->
                      </div>
                      
                  </div>
@@ -146,7 +541,7 @@
                  <p class="shop-item-price">
                     $6.99</p>
                      <button class="add-to-cart" onclick="addToCart('Hills Grain-Free Soft-Baked Naturals with Beef & Sweet Potatoes Dog Treats','$6.99','https://image.chewy.com/is/image/catalog/71479_MAIN._AC_SL1200_V1558644444_.jpg')">Add To Cart</button>
-                     <button class="view-details">View Details</button>
+                     <button class="view-details"><a href="shop.html" style="text-decoration: none; color: white;">View Details</a></button>
              </div>
              
          </div>
@@ -160,7 +555,7 @@
              <p class="rating"><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i><i class="fa fa-star checked"></i></p>
              <p class="shop-item-price">$38.04</p>
              <button class="add-to-cart" onclick="addToCart('Hills Science Diet Adult  Stomach & Tender Turkey & Rice Stew Canned Dog Food','$38.04','https://image.chewy.com/is/image/catalog/157792_MAIN._AC_SL1200_V1595601955_.jpg')">Add To Cart</button>
-             <button class="view-details">View Details</button>
+             <button class="view-details"><a href="shop.html" style="text-decoration: none; color: white;">View Details</a></button>
          </div>
          
      </div>
@@ -174,7 +569,8 @@
 
     <!-- Reviews -->
     <div class="container-fluid">
-        <h1 class="text-center fw-bold display-1 mb-3"> Reviews</h1>
+        <div class="review-header">
+            <p class="text-center"> Reviews</p></div>
         <div class="row">
          <div class="owl-carousel owl-theme">
            <div class="item mb-4">
@@ -309,7 +705,7 @@
                     <!-- <h5 class="text-success"></h5> -->
                 </div>
             </div>
-            <a class="button" href="shippingcart.html" onclick="checkoutCart()" style="position: absolute; bottom: 0;">CHECKOUT</a>
+            <a class="button" href="shippingcart.html" onclick="checkoutCart()" style="position: absolute; bottom: 0;">CONFIRM</a>
         </div>
      </div>
 
@@ -397,5 +793,5 @@ responsive:{
 
 <!-- <script>showCart();</script> -->
 
-<!-- <script src="random.js"></script> -->
+<script src="main3.js"></script>
 </html>

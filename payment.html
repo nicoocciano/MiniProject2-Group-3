@@ -7,22 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
 </head>
 <body>
     <div id="Top"></div>
-    <nav>
+    <div id="Top"></div>
+    <nav class="sticky-top">
         <a class="Logo" href="index.html"><h1>Purrfect</h1></a>
+        <div class="nav-bar">
+          
+        </div>
         <div class="search">
-            <input type="text" placeholder="   Search">
+            <input type="text" placeholder="Search">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="alt-menu">
-            <a href=""><i class="fa-solid fa-headset"></i></a>
-            <a href="">Your Account</a>
-            <a href="">Your Cart</a>
-        </div>
+            <a href="" class="yy"><i class="fa-solid fa-headset"></i></a>
+            <a  class="zz" href="loginpage.html">Your Account </a>
+            <a  class="zz" href="">Your Cart</a>
+            <a href="loginpage.html" class="ii"><i class="fa-solid fa-user"></i></a>
+            <a href="" class="ii"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+         
+
+  
     </nav>
     <br>
     <br>
@@ -70,27 +80,11 @@
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <input type="submit" value="Continue to checkout" class="btn">
+        <input type="submit" value="Continue to checkout" class="btn" onclick="success()">
       </form>
     </div>
   </div>
-  <div class="col-25">
-    <div class="container1 carts">
-    <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4> 
-      <div class="item-cart"><img src="https://image.chewy.com/is/image/catalog/48856_MAIN._AC_SL1200_V1660574064_.jpg" alt="">
-        <div class="item-details"> <span class="product-name">Product Name</span><span class="price">$15</span>
-      </div></div>
-      <div class="item-cart"><img src="https://image.chewy.com/is/image/catalog/48856_MAIN._AC_SL1200_V1660574064_.jpg" alt="">
-        <div class="item-details"> <span class="product-name">Product Name</span><span class="price">$15</span>
-      </div></div>
-      <div class="item-cart"><img src="https://image.chewy.com/is/image/catalog/48856_MAIN._AC_SL1200_V1660574064_.jpg" alt="">
-        <div class="item-details"> <span class="product-name">Product Name</span><span class="price">$15</span>
-      </div></div>
-   
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>$</b></span></p>
-    </div>
-  </div>
+ 
 </div>
 </div>
 <br>
@@ -135,4 +129,5 @@
     <!-- Footer Ends -->
 </body>
 <script src="js/bootstrap.bundle.js"></script>
+<script src="main.js"></script>
 </html>
